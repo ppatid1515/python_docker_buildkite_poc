@@ -1,13 +1,4 @@
-
-# FROM docker-local.artifactory.uber.internal:5922/devexp/generic-ci-container:latest
-#
-#ENTRYPOINT ["/build/run/entrypoint.sh"]
-#
-#CMD [ "./.ci/test.sh" ]
-
-#copying .jenkins/docker file
-
-FROM ubuntu:18.04
+FROM debian:10
 
 ENV LANG="C.UTF-8" \
     LC_ALL="C.UTF-8"
@@ -36,8 +27,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -yy --no-in
         redis-server \
         libcurl4-openssl-dev \
         libsnappy-dev \
-        mysql-server \
-        libmysqlclient-dev \
+        default-mysql-server \
+        default-libmysqlclient-dev \
         libpq-dev \
         swig \
         libsasl2-dev \
