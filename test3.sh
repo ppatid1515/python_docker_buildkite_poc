@@ -1,4 +1,4 @@
-echo "running test2.sh"
+echo "running test3.sh"
 sleep 5 
 echo "....."
 sleep 1
@@ -20,4 +20,4 @@ sleep 1
 echo "-----"
 sleep 4
 echo "===="
-echo "completed test2.sh"
+echo "completed test3.sh"
