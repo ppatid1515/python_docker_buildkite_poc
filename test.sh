@@ -5,4 +5,4 @@ echo "testing2"
 whoami
 ls
 mkdir testing
-
+cat DockerFIle
